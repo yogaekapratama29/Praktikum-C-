@@ -1,13 +1,11 @@
 #include "list.h"
 #include <iostream>
-
 using namespace std;
 
 // menggunakan :: untuk inisialisasi method di luar list.h
 List::List() {
     head = nullptr;
 }
-
 List::~List() {
     while (head != nullptr) {
         Node* temp = head;
@@ -15,7 +13,6 @@ List::~List() {
         delete temp;
     }
 }
-
 void List::insertLast(int data) {
     Node* newNode = new Node;
     newNode->data = data;
@@ -60,7 +57,6 @@ void List::deleteLast() {
         temp->next = nullptr;
     }
 }
-
 void List::deleteAfter(int key) {
     Node* temp = head;
     while (temp != nullptr && temp->data != key) {
@@ -72,7 +68,6 @@ void List::deleteAfter(int key) {
         delete delNode;
     }
 }
-
 Node* List::searchInfo(int key) {
     Node* temp = head;
     while (temp != nullptr) {
@@ -82,7 +77,6 @@ Node* List::searchInfo(int key) {
     }
     return nullptr;
 }
-
 void List::display() {
     Node* temp = head;
     while (temp != nullptr) {
