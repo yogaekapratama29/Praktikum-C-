@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/macairm1/STD_YOGA_EKA_PRATAMA_2311104023/07_Stack/GUIDED",
+      "program": "/Users/macairm1/STD_YOGA_EKA_PRATAMA_2311104023/07_Stack/GUIDED/build/Debug/outDebug"
+    }
+  ]
+}
